@@ -1,0 +1,264 @@
+import "./src/bosqueLetras.lucia";
+
+func completaLaPalabra(): void {
+    print("");
+    print("----------");
+    print("       Completa la palabra");
+    print("----------");
+    print("");
+    print("Observa cada palabra y luego escribe");
+    print("la letra que hace falta.");
+    print("");
+
+    print("------------------------------------");
+    print("Palabra completa: CASA");
+    print("Presiona Enter para continuar...");
+    input();
+
+    print("");
+    print("Completa la palabra:");
+    print("C _ S A");
+    print("Digite la letra que falta:");
+
+    let respuesta1: string = input().trim().upper();
+
+    if (respuesta1 == "A") {
+        print("¡Excelente! Respuesta correcta");
+    } else {
+        print("Respuesta incorrecta ¡Intentalo nuevamente!");
+    }
+
+    print("");
+    print("------------------------------------");
+    print("Palabra completa: GATO");
+    print("Presiona Enter para continuar...");
+    input();
+
+    print("");
+    print("Completa la palabra:");
+    print("G _ T O");
+    print("Digite la letra que falta:");
+
+    let respuesta2: string = input().trim().upper();
+
+    if (respuesta2 == "A") {
+        print("¡Excelente! Respuesta correcta");
+    } else {
+        print("Respuesta incorrecta ¡Intentalo nuevamente!");
+    }
+
+    print("");
+
+   
+    print("------------------------------------");
+    print("Palabra completa: MESA");
+    print("Presiona Enter para continuar...");
+    input();
+
+    print("");
+    print("Completa la palabra:");
+    print("M E _ A");
+    print("Digite la letra que falta:");
+
+    let respuesta3: string = input().trim().upper();
+
+    if (respuesta3 == "S") {
+        print("¡Excelente! Respuesta correcta.");
+    } else {
+        print("Respuesta incorrecta. ¡Intentalo nuevamente!");
+    }
+
+    print("");
+    print("Has terminado Completa la palabra");
+    print("");
+}
+
+
+func pendiente(nombre: string): void {
+    print("");
+    print("------------------------------------");
+    print(nombre);
+    print("Juego pendiente de implementar");
+    print("------------------------------------");
+    print("");
+}
+
+
+
+func menuLetras(): void {
+    let activo: bool = true;
+
+    while (activo) {
+        print("");
+        print("====================================");
+        print("              LETRAS");
+        print("====================================");
+        print("1. Bosque de letras");
+        print("2. Completa la palabra");
+        print("3. Letra intrusa");
+        print("0. Volver");
+        print("");
+        print("Seleccione una opcion:");
+
+        let entrada: string = input().trim();
+
+        if (entrada.is_numeric()) {
+            let opcion: int = entrada.to_int();
+
+            switch (opcion) {
+                case 1: bosqueDeLetras();
+                case 2: completaLaPalabra();
+                case 3: pendiente("Letra intrusa");
+                case 0: activo = false;
+                default: print("Opcion invalida Intente nuevamente.");
+            }
+        } else {
+            print("Debe ingresar un numero");
+        }
+    }
+}
+
+func menuNumeros(): void {
+    let activo: bool = true;
+
+    while (activo) {
+        print("");
+        print("----------");
+        print("             NUMEROS");
+        print("----------");
+        print("1. Ordena los numeros");
+        print("2. Mayor y menor");
+        print("3. Adivina el numero");
+        print("0. Volver");
+        print("");
+        print("Seleccione una opcion:");
+
+        let entrada: string = input().trim();
+
+        if (entrada.is_numeric()) {
+            let opcion: int = entrada.to_int();
+
+            switch (opcion) {
+                case 1: pendiente("Ordena los numeros");
+                case 2: pendiente("Mayor y menor");
+                case 3: pendiente("Adivina el numero");
+                case 0: activo = false;
+                default: print("Opcion invalida Intente nuevamente.");
+            }
+        } else {
+            print("Debe ingresar un numero");
+        }
+    }
+}
+
+func menuLogica(): void {
+    let activo: bool = true;
+
+    while (activo) {
+        print("");
+        print("----------");
+        print("              LOGICA");
+        print("----------");
+        print("1. Cual sobra?");
+        print("0. Volver");
+        print("");
+        print("Seleccione una opcion:");
+
+        let entrada: string = input().trim();
+
+        if (entrada.is_numeric()) {
+            let opcion: int = entrada.to_int();
+
+            switch (opcion) {
+                case 1: pendiente("Cual sobra?");
+                case 0: activo = false;
+                default: print("Opcion invalida Intente nuevamente");
+            }
+        } else {
+            print("Debe ingresar un numero");
+        }
+    }
+}
+
+func menuJuegos(): void {
+    let activo: bool = true;
+
+    while (activo) {
+        print("");
+        print("----------");
+        print("              JUEGOS");
+        print("----------");
+        print("1. Que grande!");
+        print("0. Volver");
+        print("");
+        print("Seleccione una opcion:");
+
+        let entrada: string = input().trim();
+
+        if (entrada.is_numeric()) {
+            let opcion: int = entrada.to_int();
+
+            switch (opcion) {
+                case 1: pendiente("Que grande!");
+                case 0: activo = false;
+                default: print("Opcion invalida Intente nuevamente.");
+            }
+        } else {
+            print("Debe ingresar un numero");
+        }
+    }
+}
+
+func main(): void {
+    let ejecutando: bool = true;
+
+    print("");
+    print("----------");
+    print("    MINICOMPUTADORA DIDACTICA");
+    print("----------");
+    print("");
+    print("¡Bienvenido!");
+    print("Aprende y diviertete con nuestras");
+    print("actividades educativas");
+
+    while (ejecutando) {
+        print("");
+        print("----------");
+        print("          MENU PRINCIPAL");
+        print("----------");
+        print("1. Letras");
+        print("2. Numeros");
+        print("3. Logica");
+        print("4. Juegos");
+        print("5. Salir");
+        print("");
+        print("Seleccione una opcion:");
+
+        let entrada: string = input().trim();
+
+        if (entrada.is_numeric()) {
+            let opcion: int = entrada.to_int();
+
+            switch (opcion) {
+                case 1: menuLetras();
+                case 2: menuNumeros();
+                case 3: menuLogica();
+                case 4: menuJuegos();
+                case 5: ejecutando = false;
+                default: print("Opcion invalida Intente nuevamente.");
+            }
+        } else {
+            print("Debe ingresar un numero");
+        }
+    }
+
+    print("");
+    print("----------");
+    print("      ¡GRACIAS POR JUGAR!");
+    print("----------");
+    print("Esperamos que hayas aprendido");
+    print("¡Hasta pronto!");
+}
+
+
+main();

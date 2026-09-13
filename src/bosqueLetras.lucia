@@ -1,0 +1,47 @@
+func bosqueDeLetras(): void {
+    print("");
+    print("====================================");
+    print("         BOSQUE DE LETRAS");
+    print("====================================");
+    print("");
+    print("Escribe una letra y te mostraremos");
+    print("una palabra que comienza con ella.");
+    print("");
+    print("Digite una letra:");
+
+    let letra: string = input().trim().upper();
+
+    if (!letra.is_alpha()) {
+        print("");
+        print("Entrada invalida.");
+        print("Debe ingresar una letra.");
+        return;
+    }
+
+    switch (letra) {
+        case "A": print("A de ARBOL");
+        case "B": print("B de BARCO");
+        case "C": print("C de CASA");
+        case "D": print("D de DELFIN");
+        case "E": print("E de ELEFANTE");
+        case "F": print("F de FLOR");
+        case "G": print("G de GATO");
+        case "H": print("H de HELADO");
+        case "I": print("I de ISLA");
+        case "J": print("J de JIRAFA");
+        case "L": print("L de LUNA");
+        case "M": print("M de MANZANA");
+        case "N": print("N de NUBE");
+        case "O": print("O de OSO");
+        case "P": print("P de PERRO");
+        case "R": print("R de RATON");
+        case "S": print("S de SOL");
+        case "T": print("T de TORTUGA");
+        case "U": print("U de UVA");
+        case "V": print("V de VACA");
+        default: print("No tenemos una palabra registrada para esa letra.");
+    }
+
+    print("");
+    print("¡Excelente! Has explorado el bosque de letras.");
+}
