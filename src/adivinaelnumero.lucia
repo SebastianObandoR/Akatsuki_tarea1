@@ -1,0 +1,50 @@
+func jugarAdivinaElNumero(): void {
+    print("");
+    print("====================================");
+    print("         ADIVINA EL NUMERO");
+    print("====================================");
+    print("");
+    print("Te mostraremos una secuencia de 4 numeros.");
+    print("Uno de ellos estara oculto con un simbolo ?");
+    print("Debes adivinar cual es.");
+
+    const rondas: int = 3;
+
+    for (let ronda: int = 1; ronda <= rondas; ronda++) {
+        let secuencia: list<int> = [random(1, 20), random(1, 20), random(1, 20), random(1, 20)];
+        let posicionOculta: int = random(0, 3);
+        let numeroOculto: int = secuencia[posicionOculta];
+
+        print("");
+        print("Ronda ${ronda} de ${rondas}:");
+
+        let texto: string = "";
+        for (let i: int = 0; i < 4; i++) {
+            if (i == posicionOculta) {
+                texto = texto + "? ";
+            } else {
+                texto = texto + str(secuencia[i]) + " ";
+            }
+        }
+        print(texto);
+
+        print("Cual es el numero oculto?");
+        let entrada: string = input().trim();
+
+        if (!entrada.is_numeric()) {
+            print("");
+            print("Entrada invalida. Debe ingresar un numero.");
+            print("Se pasa a la siguiente ronda.");
+        } else {
+            let respuesta: int = int(entrada);
+            if (respuesta == numeroOculto) {
+                print("Felicidades, acertaste!");
+            } else {
+                print("No era ese. El numero oculto era ${numeroOculto}. Intentalo de nuevo!");
+            }
+        }
+    }
+
+    print("");
+    print("Excelente! Has completado Adivina el numero.");
+}

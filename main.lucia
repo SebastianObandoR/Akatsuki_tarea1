@@ -1,4 +1,6 @@
 import "./src/bosqueLetras.lucia";
+import "./src/adivinaelnumero.lucia";
+import "./src/quegrande.lucia";
 
 func completaLaPalabra(): void {
     print("");
@@ -141,7 +143,7 @@ func menuNumeros(): void {
             switch (opcion) {
                 case 1: pendiente("Ordena los numeros");
                 case 2: pendiente("Mayor y menor");
-                case 3: pendiente("Adivina el numero");
+                case 3: jugarAdivinaElNumero();
                 case 0: activo = false;
                 default: print("Opcion invalida Intente nuevamente.");
             }
@@ -199,7 +201,7 @@ func menuJuegos(): void {
             let opcion: int = entrada.to_int();
 
             switch (opcion) {
-                case 1: pendiente("Que grande!");
+                case 1: jugarQueGrande();
                 case 0: activo = false;
                 default: print("Opcion invalida Intente nuevamente.");
             }

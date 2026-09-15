@@ -1,0 +1,55 @@
+class RondaQueGrande {
+    let animales: list<string> = [];
+    let indiceMayor: int = 0;
+
+    constructor(animales: list<string>, indiceMayor: int) {
+        this.animales = animales;
+        this.indiceMayor = indiceMayor;
+    }
+}
+
+func jugarQueGrande(): void {
+    print("");
+    print("====================================");
+    print("           QUE GRANDE!");
+    print("====================================");
+    print("");
+    print("Te mostraremos 3 animales.");
+    print("Indica cual es el mas grande.");
+
+    let rondas: list<RondaQueGrande> = [];
+    rondas.append(RondaQueGrande(["Elefante", "Perro", "Hormiga"], 0));
+    rondas.append(RondaQueGrande(["Ballena azul", "Tiburon", "Delfin"], 0));
+    rondas.append(RondaQueGrande(["Jirafa", "Gato", "Caballo"], 0));
+
+    let total: int = len(rondas);
+    for (let r: int = 0; r < total; r++) {
+        let ronda: RondaQueGrande = rondas[r];
+
+        print("");
+        print("Ronda ${r + 1} de ${total}: cual es el animal mas grande?");
+
+        let cantidad: int = len(ronda.animales);
+        for (let i: int = 0; i < cantidad; i++) {
+            print("${i + 1}. ${ronda.animales[i]}");
+        }
+
+        print("Escribe el numero de tu respuesta:");
+        let entrada: string = input().trim();
+
+        if (!entrada.is_numeric()) {
+            print("");
+            print("Entrada invalida. Debe ingresar un numero.");
+        } else {
+            let opcion: int = int(entrada);
+            if (opcion - 1 == ronda.indiceMayor) {
+                print("Felicidades, acertaste!");
+            } else {
+                print("No era esa. Era: ${ronda.animales[ronda.indiceMayor]}. Intentalo de nuevo!");
+            }
+        }
+    }
+
+    print("");
+    print("Excelente! Has completado Que grande!.");
+}
