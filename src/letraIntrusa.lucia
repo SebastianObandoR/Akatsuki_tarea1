@@ -1,0 +1,65 @@
+func letraIntrusa(): void {
+    print("");
+    print("====================================");
+    print("         LETRA INTRUSA");
+    print("====================================");
+    print("");
+    print("Observa la secuencia de letras del abcedario y encuentra");
+    print("la letra que no cumple la secuencia correcta");
+    print("");
+
+    print("--------------------------------");
+    print("Secuencia de letas: A-B-R-D");
+    print("--------------------------------");
+    print("Digite cual es la letra que no pertenece a la secuencia");
+
+    let Respuesta1: string = input().trim().upper();
+
+    if (Respuesta1 == "R"){
+         print("¡Excelente! respuesta correcta");
+    }
+    else{
+         print("Incorrecto ¡intentelo nuevamente!");
+    }
+
+    print("--------------------------------");
+    print("Suiguiente secuencia");
+    print("--------------------------------");
+
+    print("--------------------------------");
+    print("Secuencia de letas: H-E-J-K");
+    print("--------------------------------");
+    print("Digite cual es la letra que no pertenece a la secuencia");
+
+    let Respuesta2: string = input().trim().upper();
+
+    if (Respuesta2 == "E"){
+         print("¡Excelente! respuesta correcta");
+    }
+    else{
+         print("Incorrecto ¡intentelo nuevamente!");
+    }
+
+    print("--------------------------------");
+    print("Suiguiente secuencia");
+    print("--------------------------------");
+
+    print("--------------------------------");
+    print("Secuencia de letas: W-X-Y-D");
+    print("--------------------------------");
+    print("Digite cual es la letra que no pertenece a la secuencia");
+
+    let Respuesta3: string = input().trim().upper();
+
+    if (Respuesta3 == "D"){
+         print("¡Excelente! respuesta correcta");
+    }
+    else{
+         print("Incorrecto ¡intentelo nuevamente!");
+    }
+
+    print("");
+    print("Has terminado Letra Intrusa ¡Felicidades!");
+    print("");
+
+}

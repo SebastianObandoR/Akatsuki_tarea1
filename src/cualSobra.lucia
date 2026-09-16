@@ -1,0 +1,74 @@
+func cualSobra(): void {
+   print("");
+    print("====================================");
+    print("         CUAL SOBRA");
+    print("====================================");
+    print("");
+    print("Observa la secuencia de simbolos y");
+    print("elije el que es diferente");
+    print("");
+
+    print("--------------------------------");
+    print("Secuencia de simbolos:");
+    print("1- /, 2- /");
+    print("3- =, 4- /");
+    print("--------------------------------");
+    print("Digite la pocion del simbolo que sobra");
+
+    let Respuesta1: string = input().trim();
+
+    if (Respuesta1 == "3"){
+         print("¡Excelente! respuesta correcta");
+    }
+    else{
+         print("Incorrecto ¡intentelo nuevamente!");
+    }
+
+    print("--------------------------------");
+    print("Suiguiente secuencia");
+    print("--------------------------------");
+
+
+    print("--------------------------------");
+    print("Secuencia de simbolos:");
+    print("1- +, 2- ?");
+    print("3- +, 4- +");
+    print("--------------------------------");
+    print("Digite cual es la letra que no pertenece a la secuencia");
+
+    let Respuesta2: string = input().trim();
+
+    if (Respuesta2 == "2"){
+         print("¡Excelente! respuesta correcta");
+    }
+    else{
+         print("Incorrecto ¡intentelo nuevamente!");
+    }
+
+    print("--------------------------------");
+    print("Suiguiente secuencia");
+    print("--------------------------------");
+
+
+    print("--------------------------------");
+    print("Secuencia de simbolos:");
+    print("1- %, 2- %");
+    print("3- %, 4- $");
+    print("--------------------------------");
+    print("Digite cual es la letra que no pertenece a la secuencia");
+
+    let Respuesta3: string = input().trim();
+
+    if (Respuesta3 == "4"){
+         print("¡Excelente! respuesta correcta");
+    }
+    else{
+         print("Incorrecto ¡intentelo nuevamente!");
+    }
+
+    print("");
+    print("Has terminado Cual Sobra ¡Felicidades!");
+    print("");
+
+
+}
