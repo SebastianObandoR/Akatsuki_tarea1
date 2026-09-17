@@ -230,7 +230,8 @@ El diagrama de clases se agregará posteriormente al proyecto
 La imagen se guardará dentro de la carpeta `docs`
 
 ```text
-docs/diagrama-clases.png
+<img width="969" height="709" alt="image" src="https://github.com/user-attachments/assets/ef0ad1d8-975a-4b5f-8ae2-8058cb61ae53" />
+
 ```
 
 ## Diagrama de casos de uso
@@ -240,7 +241,8 @@ El diagrama de casos de uso también se agregará posteriormente
 La imagen se guardará dentro de la carpeta `docs`
 
 ```text
-docs/diagrama-casos-uso.png
+<img width="875" height="808" alt="image" src="https://github.com/user-attachments/assets/4cc68475-ac46-45cb-910a-ac122ef63263" />
+
 ```
 
 ## Mejoras para una versión 2.0
@@ -279,8 +281,4 @@ https://github.com/SebastianObandoR/Akatsuki_tarea1
 
 ## Estado del proyecto
 
-El proyecto se encuentra en desarrollo
-
-Actualmente ya se tiene creada la estructura principal del programa y parte de las actividades de la categoría Letras
-
-Las demás funcionalidades serán agregadas por los integrantes del equipo
+El proyecto se encuentra completo con todos sus modulos
