@@ -26,6 +26,10 @@ main.lucia
 
 src
 bosqueLetras.lucia
+adivinaelnumero.lucia
+cualSobra.lucia
+letraintrusa.lucia
+quegrande.lucia
 
 README.md
 ```
