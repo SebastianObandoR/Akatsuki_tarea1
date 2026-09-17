@@ -230,7 +230,7 @@ El diagrama de clases se agregará posteriormente al proyecto
 La imagen se guardará dentro de la carpeta `docs`
 
 
-<img width="969" height="709" alt="image" src="https://github.com/user-attachments/assets/ef0ad1d8-975a-4b5f-8ae2-8058cb61ae53" />
+<img width="1212" height="742" alt="Clases lucia drawio" src="https://github.com/user-attachments/assets/041c97e9-b6d5-4989-b0b6-51dfad9a9df0" />
 
 
 
@@ -240,8 +240,7 @@ El diagrama de casos de uso también se agregará posteriormente
 
 La imagen se guardará dentro de la carpeta `docs`
 
-
-<img width="875" height="808" alt="image" src="https://github.com/user-attachments/assets/4cc68475-ac46-45cb-910a-ac122ef63263" />
+<img width="1162" height="832" alt="Casos de uso Lucia drawio" src="https://github.com/user-attachments/assets/abf7e9a8-ddb3-4e0c-89a2-87e059973b88" />
 
 
 
