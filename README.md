@@ -161,6 +161,50 @@ Excelente respuesta correcta
 
 Se utilizan varias palabras diferentes para realizar la actividad
 
+
+## Adivina el numero
+En esta actividad se muestra una secuencia de 4 numeros generados de manera aleatoria
+
+Uno de los numeros esta oculto y se representa con el simbolo ?
+
+El usuario debe adivinar cual es el numero oculto
+
+Ejemplo
+
+```text
+Ronda 1 de 3:
+7 12 ? 3
+
+Cual es el numero oculto?
+9
+
+Felicidades, acertaste!
+```
+
+Se generan 3 rondas con secuencias diferentes en cada partida
+
+## Que grande
+
+En esta actividad se muestran los nombres de tres animales
+
+El usuario debe indicar cual de los tres animales es el mas grande
+
+Ejemplo
+
+```text
+Ronda 1 de 3: cual es el animal mas grande?
+1. Elefante
+2. Perro
+3. Hormiga
+
+Escribe el numero de tu respuesta:
+1
+
+Felicidades, acertaste!
+```
+
+Se presentan 3 conjuntos de animales diferentes en cada partida
+
 ## Funcionalidades pendientes
 
 Todavía quedan por desarrollar las siguientes actividades
@@ -171,11 +215,8 @@ Ordena los números
 
 Mayor y menor
 
-Adivina el número
-
 Cuál sobra
 
-Qué grande
 
 ## Organización del código
 
