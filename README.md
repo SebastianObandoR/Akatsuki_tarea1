@@ -229,10 +229,10 @@ El diagrama de clases se agregará posteriormente al proyecto
 
 La imagen se guardará dentro de la carpeta `docs`
 
-```text
+
 <img width="969" height="709" alt="image" src="https://github.com/user-attachments/assets/ef0ad1d8-975a-4b5f-8ae2-8058cb61ae53" />
 
-```
+
 
 ## Diagrama de casos de uso
 
@@ -240,10 +240,10 @@ El diagrama de casos de uso también se agregará posteriormente
 
 La imagen se guardará dentro de la carpeta `docs`
 
-```text
+
 <img width="875" height="808" alt="image" src="https://github.com/user-attachments/assets/4cc68475-ac46-45cb-910a-ac122ef63263" />
 
-```
+
 
 ## Mejoras para una versión 2.0
 
