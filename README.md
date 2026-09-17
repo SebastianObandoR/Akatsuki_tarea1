@@ -247,17 +247,22 @@ Digite la posicion del simbolo que sobra
 
 Se presentan 3 conjuntos de simbolos diferentes para realizar la actividad
 
-## Funcionalidades pendientes
+### a. Ordena los números
+Genera 4 números aleatorios entre 1 y 99 y se los muestra al usuario. El usuario debe
+ingresar los 4 números en el orden que él cree correcto (de mayor a menor). Internamente,
+el programa calcula el orden correcto usando un algoritmo de ordenamiento burbuja sobre
+una copia de la lista original, y compara posición por posición contra lo que el usuario
+digitó. Si coinciden todas las posiciones, gana; si no, se le indica que lo intente de nuevo.
 
-Todavía quedan por desarrollar las siguientes actividades
+### b. Mayor y menor
+Genera 3 números aleatorios (A, B, C) y elige al azar si le va a preguntar por el mayor
+o por el menor. El programa calcula ambos valores (mayor y menor) recorriendo los tres
+números con comparaciones simples, guardando también la letra correspondiente en
+mayúscula y minúscula para aceptar cualquiera de las dos formas como respuesta válida.
+Compara la respuesta del usuario contra la letra correcta y muestra el resultado.
 
-Letra intrusa
-
-Ordena los números
-
-Mayor y menor
-
-Cuál sobra
+Ambas funciones devuelven un valor `bool` (`true` si el usuario ganó, `false` si no),
+para que el menú principal pueda reutilizar ese resultado si se necesita más adelante.
 
 
 ## Organización del código
