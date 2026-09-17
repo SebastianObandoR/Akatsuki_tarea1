@@ -205,6 +205,48 @@ Felicidades, acertaste!
 
 Se presentan 3 conjuntos de animales diferentes en cada partida
 
+## Letra intrusa
+
+En esta actividad se muestra una secuencia de 4 letras del alfabeto.
+
+Las letras deberían seguir un orden correcto, pero una de ellas no pertenece a esa secuencia.
+
+El usuario debe indicar cuál es la letra que no pertenece.
+
+Ejemplo
+
+Secuencia de letras: A-B-R-D
+
+Digite cual es la letra que no pertenece a la secuencia
+
+R
+
+¡Excelente! respuesta correcta
+
+Se presentan 3 secuencias diferentes para realizar la actividad
+
+## Cual sobra?
+
+En esta actividad se muestra una secuencia de 4 simbolos numerados.
+
+Tres de los simbolos son iguales y uno es diferente.
+
+El usuario debe indicar la posicion del simbolo que sobra.
+
+Ejemplo
+
+Secuencia de simbolos:
+1- /, 2- /
+3- =, 4- /
+
+Digite la posicion del simbolo que sobra
+
+3
+
+¡Excelente! respuesta correcta
+
+Se presentan 3 conjuntos de simbolos diferentes para realizar la actividad
+
 ## Funcionalidades pendientes
 
 Todavía quedan por desarrollar las siguientes actividades
